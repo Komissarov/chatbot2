@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
   end
 
   def goodbye
-    render html: "goodbye, world!"
+    # render html: "goodbye, world!"
+    render :file => 'layouts/application.html.erb'
   end
 
 end
