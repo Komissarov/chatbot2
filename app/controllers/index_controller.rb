@@ -1,7 +1,11 @@
 class IndexController < ApplicationController
   # layout 'guest'
   
-  def index
-  	
+  def index  	
   end
+
+  def index1
+  end
+
+  
 end

@@ -1,0 +1,59 @@
+.round_btn{
+  a {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+
+    border-radius: 190px;
+    border: 3px solid #FFF;
+    background: #fdc742;
+    text-align: center;
+
+    text-decoration: none;
+    color: #27ae60;
+
+    transition: all .2s;
+  }
+
+  i {
+    line-height: 195px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    transition: all .1s;
+  }
+
+
+  .effect1_alt {
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #27ae60, 0 0 0 0 #FFF, 0 0 0 0 #27ae60;
+
+    &:hover {
+      background: #cca239;
+      box-shadow: 0 0 0 10px #FFF, 0 0 0 13px #27ae60, 0 0 0 20px #FFF, 0 0 0 23px #27ae60;
+      animation: effect1_alt 1s linear 0s infinite ;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 18px #FFF, 0 0 0 21px #27ae60, 0 0 0 20px #FFF, 0 0 0 23px #27ae60;
+    }
+  }
+
+
+
+  @keyframes effect1_alt 
+  {
+    from {
+      box-shadow: 0 0 0 10px #fdc742, 0 0 0 13px #FFF, 0 0 0 20px #fdc742, 0 0 0 23px #FFF;
+    }
+    40%{
+      box-shadow: 0 0 0 13px #fdc742, 0 0 0 16px #FFF, 0 0 0 26px #fdc742, 0 0 0 29px #FFF;
+    }
+    90%{
+      box-shadow: 0 0 0 3px #fdc742, 0 0 0 6px #FFF, 0 0 0 14px #fdc742, 0 0 0 17px #FFF;
+    }
+    to {
+      box-shadow: 0 0 0 10px #fdc742, 0 0 0 13px #FFF, 0 0 0 20px #fdc742, 0 0 0 23px #FFF;
+    }
+  }
+}

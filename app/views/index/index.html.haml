@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BePerfect - совершенствуйся удобными для тебя формами обучения</title>
+    <title>BePerfect - обучение, есть совершенствование</title>
 
     <!-- Bootstrap CoreCSS -->
     <link href="assets/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/font-awesome.min.css">
     <link rel="stylesheet" href="assets/simple-line-icons.css">
     <link rel="stylesheet" href="assets/device-mockups.min.css">
+    <link rel="stylesheet" href="assets/online_offline_round_buttons.css">
 
     <!-- Theme CSS -->
     / = stylesheet_link_tag "screen", :media => "screen, projection"
@@ -58,7 +59,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
             <li>
-            <a class="page-scroll" href="#download">Download</a>
+            <a class="page-scroll" href="#educationforms">Формы обучения</a>
             </li>
             <li>
             <a class="page-scroll" href="#features">Features</a>
@@ -79,7 +80,7 @@
                 <div class="header-content">
                 <div class="header-content-inner">
                 <h1>Новая Эра обучения, это когда ты учишься только чему ты сам хочешь, сам выбираешь форму обучения и способ доставки информации!</h1>
-                <a href="#download" class="btn btn-outline btn-xl page-scroll">Начни прямо сейчас!</a>
+                <a href="#educationforms" class="btn btn-outline btn-xl page-scroll">Начни прямо сейчас!</a>
                 </div>
                 </div>
                 </div>
@@ -99,16 +100,20 @@
                 </div>
                 </div>
 
-    %section#download.download.bg-primary.text-center
+    %section#educationforms.download.bg-primary.text-center
         %div.container
             <div class="row">
             <div class="col-md-8 col-md-offset-2">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>Our app is available on any mobile device! Download now to get started!</p>
-            <div class="badges">
-            <a class="badge-link" href="#"><img src="/assets/google-play-badge.svg" alt=""></a>
-            <a class="badge-link" href="#"><img src="/assets/app-store-badge.svg" alt=""></a>
-            </div>
+            <h2 class="section-heading">Выбери форму обучения!</h2>
+            <p>Онлайн - раз в неделю мы будем доставлять на смартфон минутный урок по интересующей тебя теме. Оффлайн - сделаем всё по классике: парта, тетрадка и преподаватель <span>☺</span></p>
+            %div.round_btn
+                <a href="#" class="effect1_alt">
+                <i class="label">Онлайн</i>
+                </a>
+                <a href="#" class="effect1_alt">
+                <i class="label">Оффлайн</i>
+                </a>
+                
             </div>
             </div>
 
