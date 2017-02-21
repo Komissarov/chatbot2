@@ -1,9 +1,80 @@
 %html
 
 %head
-    <link rel="stylesheet" href="assets/online_offline_round_buttons.css">
+  <link rel="stylesheet" href="assets/menuring.css">
+  <script src="assets/jquery.min.js"></script>
 
-.round_btn
-<a href="#" class="effect1_alt">
-<i class="label">Online1</i>
-</a>
+%body
+  #menu0{ class: "top-right open"}
+    <a class="disc l1">
+    <div>Instagramm</div>
+    </a>
+    <a class="disc l2">
+    <div>VKontakte</div>
+    </a>
+    <a class="disc l3">
+    <div>Viber</div>
+    </a>
+    <a class="disc l4" href="https://t.me/ExcelOneMinLessons" target="_blank">
+    <div>Telegram</div>
+    </a>
+    <a class="disc l5 toggle0 commontoogle">
+    </a>
+
+  #menu1{ class: "open"}
+    <a class="disc l1">
+    <div>Instagramm</div>
+    </a>
+    <a class="disc l2">
+    <div>VKontakte</div>
+    </a>
+    <a class="disc l3">
+    <div>Viber</div>
+    </a>
+    <a class="disc l4" href="https://t.me/ExcelOneMinLessons" target="_blank">
+    <div>Telegram</div>
+    </a>
+    <a class="disc l5 m5 toggle1 commontoogle">
+    </a>
+    
+
+<script>
+toggle0 = document.querySelectorAll(".toggle0")[0];
+menu0 = document.querySelectorAll("#menu0")[0];
+
+toggle0.addEventListener('click', function() {
+menu0.classList.toggle('open');
+}, false);
+
+setTimeout(function(){
+menu0.classList.toggle('open'); 
+}, 800);
+</script>
+
+
+<script>
+toggle1 = document.querySelectorAll(".toggle1")[0];
+menu1 = document.querySelectorAll("#menu1")[0];
+
+toggle1.addEventListener('click', function() {
+menu1.classList.toggle('open');
+}, false);
+
+setTimeout(function(){
+menu1.classList.toggle('open'); 
+}, 800);
+</script>
+
+
+
+
+
+:javascript
+  //закрываем менюхт
+  $('html').click(function(e) {                    
+   if(!$(e.target).hasClass('commontoogle'))
+   {
+      menu0.classList.remove('open');             
+      menu1.classList.remove('open');             
+   }
+  }); 

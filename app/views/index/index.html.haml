@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/simple-line-icons.css">
     <link rel="stylesheet" href="assets/device-mockups.min.css">
     <link rel="stylesheet" href="assets/online_offline_round_buttons.css">
+    <link rel="stylesheet" href="assets/menuring.css">
 
     <!-- Theme CSS -->
     / = stylesheet_link_tag "screen", :media => "screen, projection"
@@ -50,7 +51,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle navigation</span> Меню <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">Наверх</a>
             </div>
@@ -107,10 +108,10 @@
             <h2 class="section-heading">Выбери форму обучения!</h2>
             <p>Онлайн - раз в неделю мы будем доставлять на смартфон минутный урок по интересующей тебя теме. Оффлайн - сделаем всё по классике: парта, тетрадка и преподаватель <span>☺</span></p>
             %div.round_btn
-                <a href="#" class="effect1_alt">
+                <a href="#features" class="effect1_alt page-scroll">
                 <i class="label">Онлайн</i>
                 </a>
-                <a href="#" class="effect1_alt">
+                <a href="https://portal.enelogk5.com/CS/Education/SitePages/Trainings.aspx" target="_blank" class="effect1_alt page-scroll">
                 <i class="label">Оффлайн</i>
                 </a>
                 
@@ -148,7 +149,23 @@
             <div class="row">
             <div class="col-md-6">
             <div class="feature-item">
-            <i class="icon-screen-smartphone text-primary"></i>
+            / %i.icon-screen-smartphone.text-primary
+            #menu0.open
+                <a class="disc l1">
+                <div>Instagramm</div>
+                </a>
+                <a class="disc l2">
+                <div>VKontakte</div>
+                </a>
+                <a class="disc l3">
+                <div>Viber</div>
+                </a>
+                <a class="disc l4" href="https://t.me/ExcelOneMinLessons" target="_blank">
+                <div>Telegram</div>
+                </a>
+                <a class="disc l5 toggle0 commontoogle">
+                </a>
+
             <h3>Device Mockups</h3>
             <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
             </div>
@@ -164,7 +181,7 @@
             <div class="row">
             <div class="col-md-6">
             <div class="feature-item">
-            <i class="icon-present text-primary"></i>
+            <i class="icon-present text-primary">exel</i>
             <h3>Free to Use</h3>
             <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
             </div>
@@ -232,3 +249,33 @@
 
     <!-- Theme JavaScript -->
     <script src="assets/new-age.js"></script>
+
+
+//Эксель курс
+<script>
+toggle0 = document.querySelectorAll(".toggle0")[0];
+menu0 = document.querySelectorAll("#menu0")[0];
+
+toggle0.addEventListener('click', function() {
+menu0.classList.toggle('open');
+}, false);
+
+setTimeout(function(){
+menu0.classList.toggle('open'); 
+}, 800);
+</script>
+
+
+
+
+
+
+
+:javascript
+    // закрываем менюху
+    $('html').click(function(e) {                    
+    if(!$(e.target).hasClass('commontoogle'))
+    {
+      menu0.classList.remove('open');             
+    }
+    }); 
