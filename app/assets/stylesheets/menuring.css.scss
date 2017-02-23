@@ -13,11 +13,12 @@ $start-rot : 190deg;
 
 
 
-#menu0, #menu1 {
+#menu0, #menu1, #menu2 {
+  z-index: 10;
   display: block;
   position: relative;
-  top: - ($size * $items);
-  left: - ($size * $items)/2;
+  top: - ($size * $items)/2;
+  left: - (($size * $items) - $size)/2;
   width: $size * $items * 2;
   height: $size * $items * 2;
   user-select: none;
@@ -90,7 +91,7 @@ $start-rot : 190deg;
       &:hover {
         background: shade($color, 90%);
         background: black;
-        color: $color;
+        color: red;
         transition-delay: 0s;
       }
   
@@ -106,8 +107,7 @@ $start-rot : 190deg;
   }
 }
 
-
-.toggle0, .toggle1 {
+.toggle0, .toggle1, .toggle2 {
   line-height: $size*2;
   padding: 0;
   width: $size*2;
@@ -126,8 +126,8 @@ $start-rot : 190deg;
     color: $color-inner;
   }
   &:active {
-    background: shade($color-inner, 50%);
-    color: rgba($color-inner, .5);
+    background: black;
+    color: $color-inner;
     transform: scale(.9);
     transition-duration: 0s;
   }
@@ -140,3 +140,16 @@ $start-rot : 190deg;
 .m5{
     background: url("GE_100.png");
   }
+
+#exceldescr, #exceldescr_en, #ee_things {
+  position: relative; 
+  top: -350px;
+}
+
+#menu2, #menu3, {
+  z-index: 9;
+}
+
+a {
+  color: #696998;
+}
