@@ -134,11 +134,21 @@ $start-rot : 190deg;
 }
 
 .l5{
-    background: url("excel_bg_100.png");
+    background: url("Excel_ru.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
   }
 
 .m5{
-    background: url("GE_100.png");
+    background: url("Excel_en.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+  }
+
+.n5{
+    background: url("e_things.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
   }
 
 #exceldescr, #exceldescr_en, #ee_things {
