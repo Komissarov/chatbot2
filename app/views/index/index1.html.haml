@@ -1,80 +1,24 @@
 %html
 
-%head
-  <link rel="stylesheet" href="assets/menuring.css">
-  <script src="assets/jquery.min.js"></script>
+  %head
+    <link rel="stylesheet" href="assets/contactsform.css">
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/contactsform.js"></script>
 
-%body
-  #menu0{ class: "top-right open"}
-    <a class="disc l1">
-    <div>Instagramm</div>
-    </a>
-    <a class="disc l2">
-    <div>VKontakte</div>
-    </a>
-    <a class="disc l3">
-    <div>Viber</div>
-    </a>
-    <a class="disc l4" href="https://t.me/ExcelOneMinLessons" target="_blank">
-    <div>Telegram</div>
-    </a>
-    <a class="disc l5 toggle0 commontoogle">
-    </a>
+  <div class="form">
+  <div class="mail"></div>
+  <h1>Mail form</h1>
+  <form action="">
+  <input type="text" placeholder="Your name"/>
 
-  #menu1{ class: "open"}
-    <a class="disc l1">
-    <div>Instagramm</div>
-    </a>
-    <a class="disc l2">
-    <div>VKontakte</div>
-    </a>
-    <a class="disc l3">
-    <div>Viber</div>
-    </a>
-    <a class="disc l4" href="https://t.me/ExcelOneMinLessons" target="_blank">
-    <div>Telegram</div>
-    </a>
-    <a class="disc l5 m5 toggle1 commontoogle">
-    </a>
-    
+  <input type="text" placeholder="E-mail"/>
 
-<script>
-toggle0 = document.querySelectorAll(".toggle0")[0];
-menu0 = document.querySelectorAll("#menu0")[0];
+  <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
 
-toggle0.addEventListener('click', function() {
-menu0.classList.toggle('open');
-}, false);
+  <div class="submit">Send</div>
 
-setTimeout(function(){
-menu0.classList.toggle('open'); 
-}, 800);
-</script>
+  </form>
+  </div>
 
-
-<script>
-toggle1 = document.querySelectorAll(".toggle1")[0];
-menu1 = document.querySelectorAll("#menu1")[0];
-
-toggle1.addEventListener('click', function() {
-menu1.classList.toggle('open');
-}, false);
-
-setTimeout(function(){
-menu1.classList.toggle('open'); 
-}, 800);
-</script>
-
-
-
-
-
-:javascript
-  //закрываем менюхт
-  $('html').click(function(e) {                    
-   if(!$(e.target).hasClass('commontoogle'))
-   {
-      menu0.classList.remove('open');             
-      menu1.classList.remove('open');             
-   }
-  }); 
+  <div class="ok_message">
+  <span>We'll answer you soon!</span></div>

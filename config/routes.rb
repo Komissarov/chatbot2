@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root :to => 'index#index', :as => :index
   root 'index#index'
 
+
 end

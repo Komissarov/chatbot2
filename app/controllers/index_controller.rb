@@ -7,5 +7,7 @@ class IndexController < ApplicationController
   def index1
   end
 
+  def contact
+  end
   
 end
